@@ -14,7 +14,7 @@ async function authentication(req, res, next) {
             throw {name: "Unauthenticated"}
         }
 
-        req.user = {id: user.id, role:user.role, username: user.username, email:user.username} 
+        req.user = {id: user.id, role:user.role, username: user.username, email:user.email} 
         next()
     } catch (error) {
         next(error)
@@ -30,7 +30,6 @@ async function authorization(req, res, next){
         }else{
             let authorId = blog.authorId
             let userId = req.user.id
-            // console.log(req.user,'llllllll')
 
             if(req.user.role === 'Admin'){
                 next()
@@ -52,7 +51,6 @@ async function authorization(req, res, next){
 
 async function authForEditStatus(req, res, next){
     try {
-        // console.log(req.params)
         let blog = await Post.findByPk(req.params.id)
 
         if(!blog){
@@ -66,8 +64,6 @@ async function authForEditStatus(req, res, next){
             }else{
                 throw {name: "NotFound"}
             }
-
-            
         }
     } catch (error) {
         next(error)

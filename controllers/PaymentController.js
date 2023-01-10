@@ -5,6 +5,8 @@ let {mailHelpers} = require("../helper/nodemailer")
 class PaymentController {
     static async getPaymentToken(req, res, next) {
         try {
+            let {email, username} = req.user
+
             let {price} = req.body
             let snap = new midtransClient.Snap({
                 isProduction: false,
@@ -22,15 +24,14 @@ class PaymentController {
                     "secure": true
                 },
                 "customer_details": {
-                    "first_name": "owner",
-                    "email": "bintangtopup@gmail.com"
+                    "first_name": username,
+                    "email": email
                 }
             }
 
             let token  = await snap.createTransaction(parameter)
 
             await Payment.create({userId:req.user.id, itemId:1, orderId:order_id, isPayment:false})
-                console.log(token)
                 res.status(200).json({token, orderId:order_id})
         } catch (error) {
             console.log(error, 'paymentttt')
@@ -41,10 +42,9 @@ class PaymentController {
     static async statusPayment(req, res, next) {
         try {
 
-            let {email} = req.user
-            console.log(req.user,'ini data user')
+            let {email, username} = req.user
 
-            let message = `Kepada pelanggan Bintang Top Up yang terhormat,
+            let message = `Hi ${username},
 
             Kami ingin mengucapkan terimakasih! Pembayaran top up Anda telah berhasil kami terima. Kami senang dapat menyediakan layanan top up yang cepat dan aman bagi Anda.
             
