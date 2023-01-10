@@ -67,38 +67,38 @@ class UserController{
         }
     }
 
-    // static async googleLoginAuth (req, res, next) {
-    //     try {
-    //         const google_token = req.headers.google_token
-    //         const client = new OAuth2Client(process.env.CLIENT_TOKEN)
-    //         const access = await client.verifyIdToken({
-    //           idToken: google_token,
-    //           audience: process.env.CLIENT_TOKEN,
-    //         });
+    static async googleLoginAuth (req, res, next) {
+        try {
+            const google_token = req.headers.google_token
+            const client = new OAuth2Client(process.env.CLIENT_TOKEN)
+            const access = await client.verifyIdToken({
+              idToken: google_token,
+              audience: process.env.CLIENT_TOKEN,
+            });
 
-    //         const payload = access.getPayload();
-    //         const salt = bcrypt.genSaltSync(10);
-    //         const hash = bcrypt.hashSync(process.env.DEFAULT_PASSWORD, salt)
-    //         const [user] = await User.findOrCreate({
-    //           where: { email: payload.email },
-    //           defaults: {
-    //             email: payload.email,
-    //             username: payload.name,
-    //             password: hash,
-    //             role: 'Staff'
-    //           },
-    //           hooks: false
-    //         });
+            const payload = access.getPayload();
+            const salt = bcrypt.genSaltSync(10);
+            const hash = bcrypt.hashSync(process.env.DEFAULT_PASSWORD, salt)
+            const [user] = await User.findOrCreate({
+              where: { email: payload.email },
+              defaults: {
+                email: payload.email,
+                username: payload.name,
+                password: hash,
+                role: 'Staff'
+              },
+              hooks: false
+            });
 
-    //         const access_token = jwtToken({ id: user.id })
+            const access_token = jwtToken({ id: user.id })
 
-    //         res.status(200).json({ 
-    //             access_token,user:payload.name,role:'Staff'
-    //         })
-    //       } catch (error) {
-    //         next(error)
-    //       }
-    // }
+            res.status(200).json({ 
+                access_token,user:payload.name,role:'Staff'
+            })
+          } catch (error) {
+            next(error)
+          }
+    }
  
 
 }
