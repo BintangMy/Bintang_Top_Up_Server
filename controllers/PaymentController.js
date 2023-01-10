@@ -1,5 +1,6 @@
 let { User, Payment, Item, Game } = require('../models')
 const midtransClient = require('midtrans-client');
+let {mailHelpers} = require("../helper/nodemailer")
 
 class PaymentController {
     static async getPaymentToken(req, res, next) {
@@ -39,8 +40,25 @@ class PaymentController {
 
     static async statusPayment(req, res, next) {
         try {
+
+            let {email} = req.user
+            console.log(req.user,'ini data user')
+
+            let message = `Kepada pelanggan Bintang Top Up yang terhormat,
+
+            Kami ingin mengucapkan terimakasih! Pembayaran top up Anda telah berhasil kami terima. Kami senang dapat menyediakan layanan top up yang cepat dan aman bagi Anda.
+            
+            Sebagai bentuk apresiasi kami atas kepercayaan Anda, kami ingin memberikan tawaran eksklusif kepada Anda. Kami memberikan bonus tambahan sebesar 20% dari jumlah top up yang Anda lakukan. Untuk menikmati bonus ini, gunakan kode promo "TOPUPBONUS" saat melakukan top up selanjutnya dalam jangka waktu 1 minggu ini.
+            
+            Kami berharap Anda dapat menikmati bonus tambahan ini dan terus menggunakan layanan kami. Terima kasih atas kepercayaan Anda dan kami berharap dapat melayani Anda kembali dalam waktu dekat.
+            
+            Salam,
+            Tim Bintang Top Up`
             let {orderId} = req.body            
             await Payment.update({isPayment:true},{where:{orderId:orderId}})
+
+            mailHelpers(email,'Payment Success', message)
+
             res.status(200).json({message:'berhasil membayar dari server'})
         } catch (error) {
             next(error)

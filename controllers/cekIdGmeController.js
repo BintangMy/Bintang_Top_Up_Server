@@ -1,5 +1,5 @@
 let axios = require('axios')
-let {mailHelpers} = require("../helper/nodemailer")
+
 class cekIdGmeController {
     static async freefire(req, res, next){
         try {

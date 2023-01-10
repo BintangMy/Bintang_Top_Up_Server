@@ -1,6 +1,6 @@
 let nodemailer = require('nodemailer')
 
-function mailHelpers(){    
+function mailHelpers(email,subject,message){    
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -11,9 +11,9 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
     from: 'ngbin5228@gmail.com',
-    to: "mybintangg@gmail.com",
-    subject: 'Sending Email using Nodejs',
-    text: 'That was easy!'
+    to: 'bintangtopup2@gmail.com',
+    subject: subject,
+    text: message
 };
 
 transporter.sendMail(mailOptions, (err, info) => {

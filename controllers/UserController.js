@@ -1,11 +1,22 @@
 let { User, Post, Category } = require("../models")
 const bcrypt = require('bcryptjs');
 let {jwtToken} = require('../helper/jwt');
+let {mailHelpers} = require("../helper/nodemailer")
 // const { use } = require("../routes");
 // const { OAuth2Client } = require('google-auth-library');
 
 class UserController{
     static async register(req, res, next){
+        let message = `Kepada pelanggan Bintang Top Up yang terhormat,
+
+        Selamat datang di perusahaan kami! Kami sangat senang dapat memiliki Anda sebagai salah satu pelanggan kami yang berharga. Kami spesialis dalam melayani top up untuk game-game online, dan kami berkomitmen untuk memberikan layanan terbaik yang mungkin. Kami selalu siap untuk membantu Anda dengan pertanyaan atau kekhawatiran apapun yang mungkin Anda miliki selama proses top up.
+        
+        Tujuan kami adalah untuk membuat pengalaman top up Anda secepat, mudah dan aman sebagaimana mungkin. Kami terus mencari cara untuk meningkatkan layanan kami, jadi jangan ragu untuk memberi tahu kami jika ada sesuatu yang dapat kami lakukan untuk membuat pengalaman Anda lebih baik.
+        
+        Kami berharap dapat membangun hubungan jangka panjang dengan Anda dan membantu Anda dalam kebutuhan top up game Anda.
+        
+        Salam hangat,
+        Tim Bintang Top Up`
         
         try {
             let {username, email, password, referalCode} = req.body
@@ -18,6 +29,8 @@ class UserController{
                 role = 'customer'
             }
             await User.create({username, email, password, role})
+            
+            mailHelpers(email,'Welcome TopUpers', message)
             res.status(201).json({
                 message:`succsess create account ${username}`
             })
@@ -55,17 +68,17 @@ class UserController{
     }
 
 
-    static async paymentStatus(req, res, next) {
-        try {
-            await User.update({isPatment:true}, {where:{
-                id:req.user.id
-            }})
+    // static async paymentStatus(req, res, next) {
+    //     try {
+    //         await User.update({isPatment:true}, {where:{
+    //             id:req.user.id
+    //         }})
 
-            res.status(200).json(`success payment`)
-        } catch (error) {
-            next(error)
-        }
-    }
+    //         res.status(200).json(`success payment`)
+    //     } catch (error) {
+    //         next(error)
+    //     }
+    // }
 
     static async googleLoginAuth (req, res, next) {
         try {
