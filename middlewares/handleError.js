@@ -3,7 +3,6 @@ function handleError(error, req, res, next) {
         let errors = error.errors.map(el => {
             return el.message
         })
-        console.log(errors)
         res.status(400).json(errors)
     } else if (error.name === "EmailOrPasswordRequired") {
         res.status(400).json({ message: "Email or Password Required" })

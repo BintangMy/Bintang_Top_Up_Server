@@ -1,5 +1,5 @@
 const {Game, Item} = require("../models")
-const sequelize = require('sequelize')
+// const sequelize = require('sequelize')
 console.log('masuk routerrrr Game')
 class GameController{
 
@@ -15,15 +15,35 @@ class GameController{
                     // ]
                 }
             ]})
-            console.log(data,'jjjjjjjj')
-            res.status(200).json(data)
 
+            if(!data) throw {name: "NotFound"}
+
+            res.status(200).json(data)
         } catch (error) {
-            console.log(error,'hhhhhhhhhhh')
-            res.status(404).json({ message: "Data not found" })
+           next(error)
         }
     }
 
+    static async InActiveGame(req, res, next){
+        try {
+            let data = await Game.findAll({where:{status:'inActive'},
+            include: [
+                {
+                    model: Item,
+                    // attributes: [
+                    //     [sequelize.fn('MAX', sequelize.col('price')), 'minPrice'],
+                    //     [sequelize.fn('MIN', sequelize.col('price')), 'maxPrice']
+                    // ]
+                }
+            ]})
+
+            if(!data) throw {name: "NotFound"}
+
+            res.status(200).json(data)
+        } catch (error) {
+            next(error)
+        }
+    }
     static async gameDetail(req, res, next){
         try {
             let {id} = req.params
@@ -33,10 +53,11 @@ class GameController{
                 },
                 include:[Item]
             })
+            if(!data) throw {name: "NotFound"}
+
             res.status(201).json(data)
         } catch (error) {
-            console.log(error,'llllllllllllllllllll')
-            res.status(404).json({ message: "Data not found" })
+            next(error)
         }
     }
 
