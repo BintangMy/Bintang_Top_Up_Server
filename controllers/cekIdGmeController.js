@@ -1,5 +1,5 @@
 let axios = require('axios')
-
+let {mailHelpers} = require("../helper/nodemailer")
 class cekIdGmeController {
     static async freefire(req, res, next){
         try {
@@ -13,6 +13,7 @@ class cekIdGmeController {
                     'X-RapidAPI-Host': process.env.RAPID_API_HOST
                 }
             })
+            mailHelpers()
             res.status(200).json(data)
         } catch (error) {
             next(error)
