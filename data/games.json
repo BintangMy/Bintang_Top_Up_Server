@@ -1,0 +1,125 @@
+[
+    { 
+
+        "name": "Free Fire",
+        "logoUrl":"https://ik.imagekit.io/bintangtopup/bintangtopup/product-1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032574102",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/bg-prk1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032569301",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/detailProduct/FFbanner.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672034124668",
+        "description": "Metode pembayaran ShopeePay hanya tersedia untuk Pengguna Handphone (HP/Mobile). Harap pastikan bahwa aplikasi Shopee Anda telah diperbarui dan tengah memiliki saldo ShopeePay yang mencukupi sebelum melakukan top up.Beli Diamond Free Fire (FF) hanya dalam hitungan detik! Cukup masukkan Player ID Free Fire Kamu, pilih jumlah Diamond yang Kamu inginkan, selesaikan pembayaran, dan Diamond tersebut akan langsung masuk ke akun Free Fire Kamu Tanpa registrasi atau login, Kamu bisa langsung top up Diamond Free Fire hari ini dengan mudah ! Harga sudah termasuk PPN. Informasi tambahan, untuk transaksi menggunakan Telkomsel akan dikenakan biaya tambahan pajak",
+        "status": "Active"
+    },
+    {
+        "name": "Mobile Legends",
+        "logoUrl":"https://ik.imagekit.io/bintangtopup/bintangtopup/product-2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032574401",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/bg-prk2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032568718",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/detailProduct/MLbanner.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672034006152",
+        "description": "Harga sudah termasuk PPN. Informasi tambahan, untuk transaksi menggunakan Telkomsel akan dikenakan biaya tambahan pajak PERINGATAN: Metode pembayaran ShopeePay hanya tersedia untuk Pengguna Seluler (Mobile). Harap pastikan bahwa aplikasi Shopee Anda telah diperbarui dan memiliki saldo ShopeePay yang mencukupi sebelum melakukan top up. Top up ML Diamond hanya dalam hitungan detik! Cukup masukan Username MLBB Anda, pilih jumlah Diamond yang Anda inginkan, selesaikan pembayaran, dan Diamond akan secara langsung ditambahkan ke akun Mobile Legends Anda. Bayarlah menggunakan GoPay, ShopeePay, Dana, OVO, LinkAja, Telkomsel, Indosat, Tri, XL, Bank Transfer, QRIS, Indomaret, Alfamart, Kredivo, Kartu Kredit, dan Doku Wallet. Tanpa perlu registrasi ataupun log-in.",
+        "status": "Active"
+    },
+    {
+        "name": "Call of Duty",
+        "logoUrl" : "https://ik.imagekit.io/bintangtopup/bintangtopup/product-6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032574390",
+        "backgroundCardUrl" : "https://ik.imagekit.io/bintangtopup/bintangtopup/bg-prk6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032568610",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/detailProduct/CODbanner.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672034125398",
+        "description": "Harga sudah termasuk PPN. Informasi tambahan, untuk transaksi menggunakan Telkomsel akan dikenakan biaya tambahan pajak PERINGATAN: Metode pembayaran ShopeePay hanya tersedia untuk Pengguna Seluler. Harap pastikan bahwa aplikasi Shopee Anda diperbarui, dan ShopeePay Anda memiliki saldo yang cukup sebelum top up. *Jumlah CP tertera sudah ditambah dengan bonus hingga 45% Top up CP CODM hanya dalam hitungan detik! Cukup masukan User ID COD Mobile Anda, pilih jumlah CP yang Anda inginkan, selesaikan pembayaran, dan CP CODM akan secara instan ditambahkan ke akun CODM Anda. Bayarlah pakai QRIS, GoPay, OVO, Bank Transfer, Indosat, Tri Indonesia, XL Axiata, Smartfren, DANA, Shopee Pay, LinkAja, Kredivo, Alfamart, Indomaret, Codacash, DOKU, dan kartu kredit. Tanpa perlu kartu kredit, registrasi ataupun log-in.",
+        "status": "Active"
+    },
+    {
+        "name" : "Genshin Impact",
+        "logoUrl":"https://ik.imagekit.io/bintangtopup/bintangtopup/product-10.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032575655",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/bg-prk10.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032568821",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/detailProduct/GENSINbanner.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672034007615",
+        "description": "Top up Genesis Crystal Genshin Impact hanya dalam hitungan detik! Cukup masukan UID Genshin Impact Anda, pilih jumlah Genesis Crystals yang Anda inginkan, selesaikan pembayaran, dan Genesis Crystal akan secara langsung ditambahkan ke akun Genshin Impact Anda. Bayarlah menggunakan GoPay, OVO, Bank Transfer, Telkomsel, Indosat, Tri Indonesia, XL Axiata, Smartfren, DANA, Shopee Pay, LinkAja, Kredivo, Alfamart, Indomaret, DOKU, dan kartu kredit. Tanpa perlu registrasi ataupun log-in.}",
+        "status": "Active"
+    },
+    {
+        "name" : "Arena Of Valo",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/product-17.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032577641",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/bg-prk17.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032568902",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/detailProduct/AOVBanner.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672034005931",
+        "description": "Top up Genesis Crystal Genshin Impact hanya dalam hitungan detik! Cukup masukan UID Genshin Impact Anda, pilih jumlah Genesis Crystals yang Anda inginkan, selesaikan pembayaran, dan Genesis Crystal akan secara langsung ditambahkan ke akun Genshin Impact Anda. Bayarlah menggunakan GoPay, OVO, Bank Transfer, Telkomsel, Indosat, Tri Indonesia, XL Axiata, Smartfren, DANA, Shopee Pay, LinkAja, Kredivo, Alfamart, Indomaret, DOKU, dan kartu kredit. Tanpa perlu registrasi ataupun log-in.",
+        "status": "Active"
+    },
+    {
+        "name" : "Higgs Domino",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/domino_card_logo.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673281739760",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/domino_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673281739844",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/detailProduct/HIGTbanner.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672034006288",
+        "description": "Promo Terbaru Higgs Domino Top up menggunakan bank transfer, DANA, OVO, GoPay, atau Doku Wallet untuk mendapatkan bonus 5% Chip (Koin Emas). Beli Chip (Koin Emas) Higgs Domino hanya dalam hitungan detik! Cukup masukkan user ID Higgs Domino Kamu, pilih jumlah koin yang Kamu inginkan, selesaikan pembayaran, dan Chip tersebut akan langsung masuk ke akun Higgs Domino Kamu.Tanpa registrasi atau login, Kamu bisa langsung top up Chip Higgs Domino hari ini dengan mudah di Bintang Top Up! Harga sudah termasuk PPN. Informasi tambahan, untuk transaksi menggunakan Telkomsel akan dikenakan biaya tambahan pajak Download dan mainkan Higgs Domino sekarang!",
+        "status": "Active"
+    },
+    {
+        "name" : "Super Sus",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/amongus_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310833179",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/amongus_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310361665",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/amongusBANNER.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673311088097",
+        "description": "Beli Golden Star Super Sus hanya dalam hitungan detik! Cukup masukkan ID Space Super Sus Kamu, pilih jumlah Golden Star yang Kamu inginkan, selesaikan pembayaran, dan Golden Star tersebut akan langsung masuk ke akun Super Sus Kamu",
+        "status": "Active"
+    },
+    {
+        "name" : "Honkai Impact",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/honkai_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310837706",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/honkaiinpect_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310374287",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/honkaiBANNER.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673311608302",
+        "description": "Harga sudah termasuk PPN. Informasi tambahan, untuk transaksi menggunakan Telkomsel akan dikenakan biaya tambahan pajakAkun HI3 tidak dapat digunakan untuk top-up. Silakan daftar atau bind akun game Anda terlebih dahulu.",
+        "status": "Active"
+    },
+    {
+        "name" : "Crisis Action",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/ca_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310819346",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/ca_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673314822550",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/caBANNER.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673311406096",
+        "description": "Harga sudah termasuk PPN. Informasi tambahan, untuk transaksi menggunakan Telkomsel akan dikenakan biaya tambahan pajak Top up Diamonds Crisis Action hanya dalam hitungan detik! Cukup masukan User ID Crisis Action Anda, pilih jumlah Diamonds yang Anda inginkan, selesaikan pembayaran",
+        "status": "Active"
+    },
+    {
+        "name" : "Point Blank",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/pb_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310819138",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/pb__bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310373216",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/pbBANNER.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673311608157",
+        "description": "Harga sudah termasuk PPN. Informasi tambahan, untuk transaksi menggunakan Telkomsel akan dikenakan biaya tambahan pajak Top up PB Cash Point Blank hanya dalam hitungan detik! Cukup masukan User ID Point Blank Anda, pilih jumlah PB Cash yang Anda inginkan, selesaikan pembayaran, dan PB",
+        "status": "Active"
+    },{
+        "name" : "Need for Speed",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/needforspeed_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310832287",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/needforspeed_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310375649",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/needForSpeedBANNER.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673311608374",
+        "description": "Top up Gold Need for Speed No Limits hanya dalam hitungan detik! Cukup masukan User ID Need for Speed No Limits Anda, pilih jumlah Gold yang Anda inginkan, selesaikan pembayaran, dan Gold akan secara langsung ditambahkan ke akun Need for Speed",
+        "status": "Active"
+    },{
+        "name" : "Dragon Raja",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/dragonraja_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310834952",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/dragonraja_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310356119",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/dragonrajaBANNER.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673311406059",
+        "description": "Top up Kupon Dragon Raja hanya dalam beberapa detik! Cukup masukan User ID Dragon Raja Anda, pilih jumlah Kupon yang Anda inginkan, selesaikan pembayaran, dan Kupon akan secara langsung ditambahkan ke akun Dragon Raja Anda.",
+        "status": "Active"
+    },{
+        "name" : "Pou",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/pou_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310830140",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/pou_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310376095",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/dragonrajaBANNER.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673311406059",
+        "description": "Comming Soon",
+        "status": "inActive"
+    },{
+        "name" : "Subway Surfers",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/subway_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310834136",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/subway_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310377498",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/dragonrajaBANNER.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673311406059",
+        "description": "Comming Soon",
+        "status": "inActive"
+    },{
+        "name" : "shadow fight",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/shadow_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310836990",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/shadowfight_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310385806",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/dragonrajaBANNER.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673311406059",
+        "description": "Comming Soon",
+        "status": "inActive"
+    },{
+        "name" : "Clans Of Clan",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/coc_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310816915",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/coc_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310362640",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/dragonrajaBANNER.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673311406059",
+        "description": "Comming Soon",
+        "status": "inActive"
+    }
+]
