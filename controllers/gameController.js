@@ -1,5 +1,6 @@
-const {Game, Item, sequelize} = require("../models")
-
+const {Game, Item} = require("../models")
+// const sequelize = require('sequelize')
+console.log('masuk routerrrr Game')
 class GameController{
 
     static async getPopulerGame(req, res, next){
@@ -26,6 +27,7 @@ class GameController{
             data = data[0]
             res.status(200).json(data)
         } catch (error) {
+            console.log(error)
            next(error)
         }
     }
@@ -44,6 +46,7 @@ class GameController{
 
             res.status(200).json(data)
         } catch (error) {
+            console.log(error) 
             next(error)
         }
     }

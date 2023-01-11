@@ -35,7 +35,8 @@ class PaymentController {
 
             res.status(200).json({token, orderId:order_id})
         } catch (error) {
-            next(error)
+            console.log(error, 'paymentttt')
+            next()
         }
     }
 
