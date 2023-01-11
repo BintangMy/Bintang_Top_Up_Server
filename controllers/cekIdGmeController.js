@@ -18,7 +18,7 @@ class cekIdGmeController {
             next(error)
         }
     }
-
+    
     static async genshinImpact(req, res, next){
         try {
             let {id, region} = req.body

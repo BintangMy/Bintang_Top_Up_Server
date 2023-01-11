@@ -10,6 +10,7 @@ List of available endpoints:
 - `POST /google-login-auth`
 - `GET /game`
 - `GET /game/comming-soon`
+- `GET /game/top-game`
 - `GET /game/:id`
 - `POST /cekId/freefire`
 - `POST /cekId/genshinImpact`
@@ -171,25 +172,14 @@ _Response (200 - OK)_
         "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/detailProduct/FFbanner.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672034124668",
         "description": "Metode pembayaran ShopeePay hanya tersedia untuk Pengguna Handphone (HP/Mobile). Harap pastikan bahwa aplikasi Shopee Anda telah diperbarui dan tengah memiliki saldo ShopeePay yang mencukupi sebelum melakukan top up.Beli Diamond Free Fire (FF) hanya dalam hitungan detik! Cukup masukkan Player ID Free Fire Kamu, pilih jumlah Diamond yang Kamu inginkan, selesaikan pembayaran, dan Diamond tersebut akan langsung masuk ke akun Free Fire Kamu Tanpa registrasi atau login, Kamu bisa langsung top up Diamond Free Fire hari ini dengan mudah ! Harga sudah termasuk PPN. Informasi tambahan, untuk transaksi menggunakan Telkomsel akan dikenakan biaya tambahan pajak",
         "status": "Active",
-        "createdAt": "2023-01-10T04:48:12.301Z",
-        "updatedAt": "2023-01-10T04:48:12.301Z",
-        "Items": [
-            {
-                "id": 1,
-                "nominal": 5,
-                "price": 980,
-                "type": "Diamonds",
-                "itemIconUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/detailProduct/FFitemsIcon.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672034006485",
-                "gameId": 1,
-                "createdAt": "2023-01-10T04:48:12.328Z",
-                "updatedAt": "2023-01-10T04:48:12.328Z"
-            }
-            ...
-            ...
-            ...
-            ...
-        ]
-    }
+        "createdAt": "2023-01-11T10:24:56.578Z",
+        "updatedAt": "2023-01-11T10:24:56.578Z",
+        "max": 10000000,
+        "min": 980
+    },
+    ...
+    ...
+    ...
 ]
 
 _Response (404 - Data Not Found)_
@@ -264,7 +254,58 @@ _Response (500 - server error)_
 ```
 
 
-## 6. GET /game/:id
+## 6. GET /game/top-game
+
+- `GET /game/top-game`
+
+Description:
+
+- Get top 5 game 
+
+
+_Response (200 - OK)_
+
+```json
+[
+    {
+        "id": 1,
+        "name": "Free Fire",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/product-1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032574102",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/bg-prk1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672032569301",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/detailProduct/FFbanner.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672034124668",
+        "description": "Metode pembayaran ShopeePay hanya tersedia untuk Pengguna Handphone (HP/Mobile). Harap pastikan bahwa aplikasi Shopee Anda telah diperbarui dan tengah memiliki saldo ShopeePay yang mencukupi sebelum melakukan top up.Beli Diamond Free Fire (FF) hanya dalam hitungan detik! Cukup masukkan Player ID Free Fire Kamu, pilih jumlah Diamond yang Kamu inginkan, selesaikan pembayaran, dan Diamond tersebut akan langsung masuk ke akun Free Fire Kamu Tanpa registrasi atau login, Kamu bisa langsung top up Diamond Free Fire hari ini dengan mudah ! Harga sudah termasuk PPN. Informasi tambahan, untuk transaksi menggunakan Telkomsel akan dikenakan biaya tambahan pajak",
+        "status": "Active",
+        "createdAt": "2023-01-11T10:24:56.578Z",
+        "updatedAt": "2023-01-11T10:24:56.578Z",
+        "max": 10000000,
+        "min": 980
+    },
+    ...
+    ...
+    ...
+]
+
+_Response (404 - Data Not Found)_
+
+```json
+  {
+    "message":  "Data not found" 
+  }
+```
+
+_Response (500 - server error)_
+
+```json
+{
+  "message": "Internal server error"
+}
+```
+
+
+
+
+
+## 7. GET /game/:id
 
 - `GET /game/:id`
 
@@ -338,7 +379,7 @@ _Response (500 - server error)_
 }
 ```
 
-## 7. POST /cekId/freefire
+## 8. POST /cekId/freefire
 
 - `POST /cekId/freefire`
 
@@ -382,7 +423,7 @@ _Response (500 - server error)_
 
 
 
-## 7. POST /cekId/freefire
+## 9. POST /cekId/freefire
 
 - `POST /cekId/freefire`
 
@@ -425,7 +466,7 @@ _Response (500 - server error)_
 ```
 
 
-## 8. POST /cekId/genshinImpact
+## 10. POST /cekId/genshinImpact
 
 - `POST /cekId/genshinImpact`
 
@@ -468,7 +509,7 @@ _Response (500 - server error)_
 }
 ```
 
-## 8. POST /cekId/mobilelegends
+## 11. POST /cekId/mobilelegends
 
 - `POST /cekId/mobilelegends`
 
@@ -512,7 +553,7 @@ _Response (500 - server error)_
 
 
 
-## 10. POST /cekId/aov
+## 12. POST /cekId/aov
 
 - `POST /cekId/cod`
 
@@ -554,7 +595,7 @@ _Response (500 - server error)_
 }
 ```
 
-## 11. POST /cekId/cod
+## 13. POST /cekId/cod
 
 - `POST /cekId/cod`
 
@@ -597,7 +638,7 @@ _Response (500 - server error)_
 ```
 
 
-## 12. POST /cekId/dominohight
+## 14. POST /cekId/dominohight
 - `POST /cekId/dominohight`
 
 Description:
@@ -634,7 +675,7 @@ _Response (500 - server error)_
 }
 ```
 
-## 12. POST /payment/get-payment-token
+## 15. POST /payment/get-payment-token
 
 Description:
 
@@ -667,7 +708,7 @@ _Response (500 - server error)_
 }
 ```
 
-## 13. PATCH /payment/statusPayment
+## 16. PATCH /payment/statusPayment
 
 Description:
 

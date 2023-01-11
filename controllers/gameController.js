@@ -1,25 +1,33 @@
-const {Game, Item} = require("../models")
+const {Game, Item,sequelize} = require("../models")
 // const sequelize = require('sequelize')
 console.log('masuk routerrrr Game')
 class GameController{
 
-    static async findAllActiveGame(req, res, next){
+    static async getPopulerGame(req, res, next){
         try {
-            let data = await Game.findAll({where:{status:'Active'},
-            include: [
-                {
-                    model: Item,
-                    // attributes: [
-                    //     [sequelize.fn('MAX', sequelize.col('price')), 'minPrice'],
-                    //     [sequelize.fn('MIN', sequelize.col('price')), 'maxPrice']
-                    // ]
-                }
-            ]})
-
-            if(!data) throw {name: "NotFound"}
-
+        
+        let data = await sequelize.query(`select g.*, MAX(i.price), MIN(i.price) from "Games" g 
+        join "Items" i ON g.id = i."gameId"
+        group by g.id
+        order by g.id
+        limit 5`)
+            data = data[0]
             res.status(200).json(data)
         } catch (error) {
+           next(error)
+        }
+    }
+
+    static async findAllActiveGame(req, res, next){
+        try {
+        
+        let data = await sequelize.query(`select g.*, MAX(i.price), MIN(i.price) from "Games" g 
+        join "Items" i ON g.id = i."gameId"
+        group by g.id order by g.id`)
+            data = data[0]
+            res.status(200).json(data)
+        } catch (error) {
+            console.log(error)
            next(error)
         }
     }
@@ -30,17 +38,15 @@ class GameController{
             include: [
                 {
                     model: Item,
-                    // attributes: [
-                    //     [sequelize.fn('MAX', sequelize.col('price')), 'minPrice'],
-                    //     [sequelize.fn('MIN', sequelize.col('price')), 'maxPrice']
-                    // ]
                 }
-            ]})
+            ]
+        })
 
             if(!data) throw {name: "NotFound"}
 
             res.status(200).json(data)
         } catch (error) {
+            // console.log(error) 
             next(error)
         }
     }
