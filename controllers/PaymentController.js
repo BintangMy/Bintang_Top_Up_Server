@@ -35,7 +35,6 @@ class PaymentController {
 
             res.status(200).json({token, orderId:order_id})
         } catch (error) {
-            console.log(error, 'paymentttt')
             next(error)
         }
     }
@@ -60,6 +59,7 @@ class PaymentController {
 
             mailHelpers(email,'Payment Success', message)
 
+            console.log(req.user,'iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii')
             res.status(200).json({message:'berhasil membayar dari server'})
         } catch (error) {
             next(error)
