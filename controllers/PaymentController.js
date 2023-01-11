@@ -33,10 +33,12 @@ class PaymentController {
 
             await Payment.create({userId:req.user.id, itemId:1, orderId:order_id, isPayment:false})
 
-            res.status(200).json({token, orderId:order_id})
+            // let data = {token, orderId:order_id}
+
+            // console.log(data,'ini datanya')
+                res.status(200).json({token, orderId:order_id})
         } catch (error) {
-            console.log(error, 'paymentttt')
-            next()
+            next(error)
         }
     }
 

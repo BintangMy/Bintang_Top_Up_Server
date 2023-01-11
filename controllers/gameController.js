@@ -1,4 +1,4 @@
-const {Game, Item} = require("../models")
+const {Game, Item,sequelize} = require("../models")
 // const sequelize = require('sequelize')
 console.log('masuk routerrrr Game')
 class GameController{
@@ -46,7 +46,7 @@ class GameController{
 
             res.status(200).json(data)
         } catch (error) {
-            console.log(error) 
+            // console.log(error) 
             next(error)
         }
     }
