@@ -32,10 +32,10 @@ class PaymentController {
             let token  = await snap.createTransaction(parameter)
 
             await Payment.create({userId:req.user.id, itemId:1, orderId:order_id, isPayment:false})
-                res.status(200).json({token, orderId:order_id})
+
+            res.status(200).json({token, orderId:order_id})
         } catch (error) {
-            console.log(error, 'paymentttt')
-            next()
+            next(error)
         }
     }
 
