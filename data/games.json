@@ -121,5 +121,13 @@
         "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/dragonrajaBANNER.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673311406059",
         "description": "Comming Soon",
         "status": "inActive"
+    },{
+        "name" : "Clans Royal",
+        "logoUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/cr_logo_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310820034",
+        "backgroundCardUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/cr_bg_card.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673310357197",
+        "bannerUrl": "https://ik.imagekit.io/bintangtopup/bintangtopup/card/dragonrajaBANNER.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673311406059",
+        "description": "Comming Soon",
+        "status": "inActive"
     }
+
 ]
