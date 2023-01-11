@@ -2,8 +2,7 @@ let { User, Post, Category } = require("../models")
 const bcrypt = require('bcryptjs');
 let {jwtToken} = require('../helper/jwt');
 let {mailHelpers} = require("../helper/nodemailer")
-// const { use } = require("../routes");
-// const { OAuth2Client } = require('google-auth-library');
+const { OAuth2Client } = require('google-auth-library');
 
 class UserController{
     static async register(req, res, next){
