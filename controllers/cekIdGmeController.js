@@ -13,7 +13,6 @@ class cekIdGmeController {
                     'X-RapidAPI-Host': process.env.RAPID_API_HOST
                 }
             })
-            mailHelpers()
             res.status(200).json(data)
         } catch (error) {
             next(error)

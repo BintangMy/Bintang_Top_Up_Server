@@ -32,7 +32,7 @@ class UserController{
             
             mailHelpers(email,'Welcome TopUpers', message)
             res.status(201).json({
-                message:`succsess create account ${username}`
+                message:`berhasil membuuat akun ${username}`
             })
         } catch (error) {
             next(error)
@@ -86,7 +86,7 @@ class UserController{
                 email: payload.email,
                 username: payload.name,
                 password: hash,
-                role: 'Staff'
+                role: 'customer'
               },
               hooks: false
             });
@@ -94,7 +94,7 @@ class UserController{
             const access_token = jwtToken({ id: user.id })
 
             res.status(200).json({ 
-                access_token,user:payload.name,role:'Staff'
+                access_token,user:payload.name,role:'customer'
             })
           } catch (error) {
             next(error)
