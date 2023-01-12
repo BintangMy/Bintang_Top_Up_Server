@@ -7,6 +7,7 @@ const user = require('./user')
 const payment = require('./payment')
 const cekId = require('./cekId')
 
+router.get("/", (req, res) => res.status(200).json({messaage: "HELLO"}))
 router.use('/',user)
 router.use('/game',game)
 router.use('/cekid',cekId)
