@@ -10,6 +10,8 @@ const cekId = require('./cekId')
 router.use('/',user)
 router.use('/game',game)
 router.use('/cekid',cekId)
+
+
 router.use(authentication)
 router.use('/payment', payment)
 

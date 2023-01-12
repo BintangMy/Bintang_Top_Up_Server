@@ -9,6 +9,7 @@ function handleError(error, req, res, next) {
     } else if (error.name === "PasswordInValid") {
         res.status(401).json({ message: "Email or Password Invalid" })
     }else if (error.name === "Unauthenticated") {
+        console.log(error, 'ini handeleeeeeeeeeeee')
         res.status(401).json({ message: "validation error please login" })
     }else if (error.name === "Forbidden") {
         res.status(403).json({ message: "Not access URL" })

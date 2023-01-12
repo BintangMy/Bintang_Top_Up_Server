@@ -1,6 +1,7 @@
 const {Game, Item,sequelize} = require("../models")
-// const sequelize = require('sequelize')
-console.log('masuk routerrrr Game')
+let axios = require('axios')
+
+
 class GameController{
 
     static async getPopulerGame(req, res, next){
@@ -63,6 +64,27 @@ class GameController{
 
             res.status(201).json(data)
         } catch (error) {
+            next(error)
+        }
+    }
+    static async qrCode(req,res, next){
+        try {
+            let {link} = req.body
+
+            console.log(link,'ini link api keyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy')
+            const { data } = await axios({
+                method: 'POST',
+                url: 'https://qrcode3.p.rapidapi.com/qrcode/text',
+                headers: {
+                  'content-type': 'application/json',
+                  'X-RapidAPI-Key': process.env.RAPID_API_QRCODE,
+                  'X-RapidAPI-Host': process.env.RAPID_API_QRCODE_HOST
+                },
+                data: `{"data":"${link}","image":{"uri":"icon://appstore","modules":true},"style":{"module":{"color":"black","shape":"default"},"inner_eye":{"shape":"default"},"outer_eye":{"shape":"default"},"background":{}},"size":{"width":200,"quiet_zone":4,"error_correction":"M"},"output":{"filename":"qrcode","format":"png"}}`
+            })
+              res.status(200).json(data)
+        } catch (error) {
+            console.log(error, 'ini errrrrrr qrrrrr')
             next(error)
         }
     }

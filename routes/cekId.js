@@ -1,13 +1,13 @@
 const express = require('express')
 const router = express.Router()
-const {cekIdGmeController} = require("../controllers/cekIdGmeController")
+const {cekIdGameController} = require("../controllers/cekIdGameController")
 
-router.post('/freefire', cekIdGmeController.freefire)
-router.post('/genshinImpact', cekIdGmeController.genshinImpact)
-router.post('/mobilelegends', cekIdGmeController.mobileLegends)
-router.post('/cod', cekIdGmeController.cod)
-router.post('/aov', cekIdGmeController.aov)
-router.post('/dominohight', cekIdGmeController.domino)
+router.post('/freefire', cekIdGameController.freefire)
+router.post('/genshinImpact', cekIdGameController.genshinImpact)
+router.post('/mobilelegends', cekIdGameController.mobileLegends)
+router.post('/cod', cekIdGameController.cod)
+router.post('/aov', cekIdGameController.aov)
+router.post('/dominohight', cekIdGameController.domino)
 
 
 module.exports = router

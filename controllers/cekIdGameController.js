@@ -1,6 +1,6 @@
 let axios = require('axios')
 
-class cekIdGmeController {
+class cekIdGameController {
     static async freefire(req, res, next){
         try {
             let {id} = req.body
@@ -112,6 +112,6 @@ class cekIdGmeController {
     }
 }
 
-module.exports = {cekIdGmeController}
+module.exports = {cekIdGameController}
 
 //////////////////////////////////
